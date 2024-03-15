@@ -11,7 +11,7 @@ div{
     grid-template-areas: 
     "banner banner banner"
     "nav nav nav"
-    "body body body";
+    "sidebar body body";
 }
 
 .banner {
@@ -43,13 +43,37 @@ div{
     margin-right: 16px;
     }
 
+.navbutton {
+    background-color: rgb(31, 228, 150);
+    color: black;
+    text-align: center;
+    border-radius: 2px;
+
+}
+
+.navbutton:hover {
+    background-color: black;
+    color: white;
+}
+
+.sidebar {
+    display: flex;
+    padding: 10px;
+    overflow-x: auto;
+    justify-content: center;
+    flex-direction: column;
+    grid-area: sidebar;
+    border: 2px solid rgb(31, 228, 150);
+    height: 500px;
+}
+
 
 .body {
     display: flex;
     justify-content: center;
     grid-area: body;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    padding: 5px;
+    padding: 10px;
 }
 
 ul {
