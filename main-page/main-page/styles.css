@@ -5,8 +5,16 @@
     "nav nav search"
     "sidebar body body";
 }
+
 .banner {
+    background-color: #77b88d;
     display: flex;
     align-content: center;
 
 }
+
+div{
+    background-color: black;
+    color: white;
+}
+
