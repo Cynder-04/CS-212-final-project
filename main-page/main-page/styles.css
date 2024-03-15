@@ -10,7 +10,7 @@ div{
     grid-template-columns: 150px auto;
     grid-template-areas: 
     "banner banner banner"
-    "nav nav search"
+    "nav nav nav"
     "sidebar body body";
 }
 
@@ -32,8 +32,17 @@ div{
 }
 
 .nav {
+    display: flex;
+    justify-content: center;
+    align-content: center;
     grid-area: nav;
 }
+
+.nav input[type=text]{
+    float: right;
+    margin-right: 16px;
+    }
+
 
 .body {
     grid-area: body;
