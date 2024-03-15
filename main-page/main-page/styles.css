@@ -1,3 +1,12 @@
+.container {
+    display: grid;
+    grid-template-areas: 
+    "banner banner banner"
+    "nav nav search"
+    "sidebar body body";
+}
 .banner {
+    display: flex;
+    align-content: center;
 
 }
