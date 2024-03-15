@@ -11,7 +11,7 @@ div{
     grid-template-areas: 
     "banner banner banner"
     "nav nav nav"
-    "sidebar body body";
+    "body body body";
 }
 
 .banner {
@@ -38,18 +38,18 @@ div{
     grid-area: nav;
 }
 
-.nav input[type=text]{
+.nav ul:last-child{
     float: right;
     margin-right: 16px;
     }
 
 
 .body {
+    display: flex;
+    justify-content: center;
     grid-area: body;
-}
-
-body{
-    grid-area: body;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5px;
 }
 
 ul {
