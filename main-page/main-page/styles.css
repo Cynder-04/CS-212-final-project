@@ -6,6 +6,8 @@ div{
 
 .container {
     display: grid;
+    grid-template-rows: 300px auto;
+    grid-template-columns: 150px auto;
     grid-template-areas: 
     "banner banner banner"
     "nav nav search"
@@ -30,4 +32,7 @@ div{
     grid-area: body;
 }
 
+body{
+    grid-area: body;
+}
 
