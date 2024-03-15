@@ -1,3 +1,9 @@
+div{
+    font-family: "Lucida Console", "Courier New", monospace;
+    background-color: black;
+    color: white;
+}
+
 .container {
     display: grid;
     grid-template-areas: 
@@ -10,11 +16,17 @@
     background-color: #77b88d;
     display: flex;
     align-content: center;
-
+    justify-content: center;
+    grid-area: banner;
+    
 }
 
-div{
-    background-color: black;
-    color: white;
+.nav {
+    grid-area: nav;
 }
+
+.body {
+    grid-area: body;
+}
+
 
