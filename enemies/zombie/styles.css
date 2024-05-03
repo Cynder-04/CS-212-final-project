@@ -146,7 +146,7 @@ ul {
 #image {
     grid-area: image;
     width: 80%;
-    height: 80%;
+    height: 70%;
 }
 
 #title {
