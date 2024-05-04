@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="\cs-212-final-project-testing\CS-212-final-project-main\sim\styles.css">
+    <title>Zombie</title>
+    </head>
+    
+
+    <div class="container">
+
+        <!--Banner-->
+    <div class="banner">
+        <img class="bannerImg" src="https://cb3474.blob.core.windows.net/$web/cs-212-final-project-testing/CS-212-final-project-main/main-page/banner.png" alt="banner">
+      </div>
+    
+        <div class="nav">
+            <nav>
+               <ul>
+                <li><a href="https://cb3474.blob.core.windows.net/$web/cs-212-final-project-testing/CS-212-final-project-main/main-page/index.html"><button class="navbutton">Home</button></a></li>
+              <li><a href="https://cb3474.blob.core.windows.net/$web/cs-212-final-project-testing/CS-212-final-project-main/enemies/nav/index.html"><button class="navbutton">Enemies</button></a></li>
+              <li><a href="https://cb3474.blob.core.windows.net/$web/cs-212-final-project-testing/CS-212-final-project-main/bosses/nav/index.html"><button class="navbutton">Bosses</button></a></li>
+
+                 <hr>
+                 <li><input type="text" placeholder="Search.."></li>
+               </ul>  
+             </nav>
+           </div>
+
+    <!--Sidebar-->
+    <div class="sidebar">
+        <nav>
+            <a href="https://cb3474.blob.core.windows.net/$web/cs-212-final-project-testing/CS-212-final-project-main/main-page/index.html">Home</a>
+            <a href="https://cb3474.blob.core.windows.net/$web/cs-212-final-project-testing/CS-212-final-project-main/enemies/nav/index.html">Enemies</a>
+            <a href="https://cb3474.blob.core.windows.net/$web/cs-212-final-project-testing/CS-212-final-project-main/bosses/nav/index.html">Bosses</a>
+        </nav>
+    </div>
+
+    <div class="body">
+      <body>
+        <div class="dropdowns">
+        <label for="helmet">Choose helmet:</label>
+
+        <select name="helmet" id="helmet">
+          <option value="wood">Wood</option>
+          <option value="cactus">Cactus</option>
+          <option value="iron">Iron</option>
+        </select> 
+
+        <label for="chestplate">Choose breastplate:</label>
+
+        <select name="chestplate" id="chestplate">
+          <option value="wood">Wood</option>
+          <option value="cactus">Cactus</option>
+          <option value="iron">Iron</option>
+        </select> 
+
+        <label for="greaves">Choose greaves:</label>
+
+        <select name="greaves" id="greaves">
+          <option value="wood">Wood</option>
+          <option value="cactus">Cactus</option>
+          <option value="iron">Iron</option>
+        </select> 
+         </div>
+
+         <div class="stats">
+            <p id="helmetStats">Defense: </p>
+            <p id="chestplateStats">Defense: </p>
+            <p id="greavesStats">Defense: </p>
+         </div>
+
+         <p id="setBonus"> </p>
+             
+
+         <script type="module" src="script.js"></script>
+    </body>
+    </div>
+
+    </div>
+</html>
+

@@ -1,0 +1,156 @@
+div{
+    font-family: "Lucida Console", "Courier New", monospace;
+    background-color: black;
+    color: white;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 300px auto;
+    grid-template-columns: 150px auto;
+    grid-template-areas: 
+    "banner banner banner"
+    "nav nav nav"
+    "sidebar body body";
+}
+
+.banner {
+    background-color: #77b88d;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    grid-area: banner;
+    font-size: 100px;
+    z-index: 2;
+}
+
+.bannerImg {
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    z-index: 1;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    grid-area: nav;
+}
+
+.nav ul:last-child{
+    float: right;
+    margin-right: 16px;
+    }
+
+.navbutton {
+    background-color: rgb(31, 228, 150);
+    color: black;
+    text-align: center;
+    border-radius: 2px;
+
+}
+
+.navbutton:hover {
+    background-color: black;
+    color: white;
+}
+
+.sidebar {
+    display: flex;
+    padding: 10px;
+    overflow-x: auto;
+    justify-content: center;
+    flex-direction: column;
+    grid-area: sidebar;
+    border: 2px solid rgb(31, 228, 150);
+    height: 500px;
+}
+
+
+.body {
+    display: grid;
+    justify-content: center;
+    grid-area: body;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  li {
+    padding: 5px;
+  }
+
+.sidebar{
+    display: flex;
+    grid-area: sidebar;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0px;
+}
+
+.sidebar a{
+    display: flex;
+    padding: 20px 10px;
+    border-bottom: 2px solid rgb(31, 228, 150);
+    text-decoration: none;
+    transition: all 0.3s;
+    color: white;
+}
+
+.sidebar a:hover{
+    background-color: rgb(31, 228, 150);
+    box-shadow: inset 5px 5px 15px black;
+} 
+
+.boss-nav {
+    grid-area: boss-nav;
+    margin: 10px;
+}
+
+.boss-nav a{
+    display: flex;
+    padding: 20px 10px;
+    border-bottom: 2px solid rgb(31, 228, 150);
+    text-decoration: none;
+    transition: all 0.3s;
+    color: white;
+}
+
+.boss-nav a:hover{
+    background-color: rgb(31, 228, 150);
+    box-shadow: inset 5px 5px 15px black;
+}
+
+select {
+    padding: 50px 50px;
+    border: 2px solid rgb(31, 228, 150);
+    text-decoration: none;
+    transition: all 0.3s;
+    background-color: black;
+    color: white;
+    grid-area: dropdowns;
+}
+
+.body {
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-columns: 200px 200px;
+    grid-template-areas: 
+    "dropdowns stats image"
+    "dropdowns stats image"
+    "dropdowns stats image";
+}
+
+.stats{
+    display: flex;
+    align-items:baseline;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 100px;
+}
+
