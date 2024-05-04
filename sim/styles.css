@@ -138,19 +138,43 @@ select {
 
 .body {
     display: grid;
-    grid-template-columns: 200px auto;
-    grid-template-columns: 200px 200px;
     grid-template-areas: 
-    "dropdowns stats"
-    "dropdowns stats"
-    "dropdowns stats";
+    "dropdowns helmetStats setBonus"
+    "dropdowns chestplateStats setBonus"
+    "dropdowns greavesStats setBonus";
+    grid-template-columns: 400px 250px 250px;
+    grid-template-rows: auto;
 }
 
-.stats{
+.dropdown {
     display: flex;
-    align-items:baseline;
-    justify-content: center;
-    flex-direction: column;
-    row-gap: 100px;
+    flex-direction: row;
+    justify-content: end;
+    padding-bottom: 50px;
+}
+.setBonus{
+    grid-area: setBonus;
 }
 
+.stat{
+    display: flex;
+    flex-direction: row;
+    padding-left: 50px;
+    padding-bottom: 115px;
+}
+
+#helmetStats{
+    margin: 0;
+}
+
+#chestplateStats{
+    padding-top: 22px;
+}
+
+#greavesStats{
+    padding-top: 9px;
+}
+
+#setBonus{
+    margin: 0;
+}
