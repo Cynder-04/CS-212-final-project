@@ -8,7 +8,10 @@ var helmetValue = helmet.value;
 var chestplateValue = chestplate.value;
 var greavesValue = greaves.value;
 var setBonus = document.getElementById("setBonus");
-var totalDef = document.getElementById("totalDefense");
+var totalDef = document.getElementById("totalDef");
+var helmDef = 0;
+var chestDef = 0;
+var greavesDef = 0;
 
 //Checks whether or not 3 of the same armor set are equipped and updates the set bonus accordingly
 function setBonusCheck (){
@@ -29,23 +32,36 @@ function setBonusCheck (){
     }
 }
 
+//Calculate Total Defense
+function defCalc () {
+    let i = helmDef + chestDef + greavesDef;
+
+    totalDef.innerHTML = "Total Defense: " + i;
+
+
+}
+
 //Helmet event logic
 helmet.addEventListener("change", function () {
     helmetValue = helmet.value;
   
     if (helmetValue == "wood"){
         helmetStats.innerHTML = "Defense: 1";
+        helmDef = 1;
     }
    
     else if (helmetValue == "cactus"){
         helmetStats.innerHTML = "Defense: 1";
+        helmDef = 1;
     }
    
     else if (helmetValue == "iron"){
         helmetStats.innerHTML = "Defense: 2";
+        helmDef = 2;
     }
 
     setBonusCheck();
+    defCalc();
 });
 
 
@@ -56,17 +72,21 @@ chestplate.addEventListener("change", function () {
   
     if (chestplateValue == "wood"){
         chestplateStats.innerHTML = "Defense: 1";
+        chestDef = 1;
     }
    
     else if (chestplateValue == "cactus"){
         chestplateStats.innerHTML = "Defense: 1";
+        chestDef = 1;
     }
    
     else if (chestplateValue == "iron"){
         chestplateStats.innerHTML = "Defense: 3";
+        chestDef = 3;
     }
 
     setBonusCheck();
+    defCalc();
 });
 
 
@@ -77,15 +97,19 @@ greaves.addEventListener("change", function () {
   
     if (greavesValue == "wood"){
         greavesStats.innerHTML = "Defense: 0";
+        greavesDef = 0;
     }
    
     else if (greavesValue == "cactus"){
         greavesStats.innerHTML = "Defense: 1";
+        greavesDef = 1;
     }
    
     else if (greavesValue == "iron"){
         greavesStats.innerHTML = "Defense: 2";
+        greavesDef = 2;
     }
 
     setBonusCheck();
+    defCalc();
 });

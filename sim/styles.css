@@ -140,10 +140,10 @@ select {
     display: grid;
     grid-template-areas: 
     "dropdowns helmetStats setBonus"
-    "dropdowns chestplateStats setBonus"
-    "dropdowns greavesStats setBonus";
+    "dropdowns chestplateStats totalDef"
+    "dropdowns greavesStats totalDef";
     grid-template-columns: 400px 250px 250px;
-    grid-template-rows: auto;
+    grid-template-rows: 100px 100px auto;
 }
 
 .dropdown {
@@ -177,4 +177,9 @@ select {
 
 #setBonus{
     margin: 0;
+}
+
+#totalDef {
+    grid-area: totalDef;
+    align-self: start;
 }
