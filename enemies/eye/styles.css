@@ -69,7 +69,7 @@ div{
 
 
 .body {
-    display: flex;
+    display: grid;
     justify-content: center;
     grid-area: body;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -124,4 +124,43 @@ ul {
 .boss-nav a:hover{
     background-color: rgb(31, 228, 150);
     box-shadow: inset 5px 5px 15px black;
+}
+
+#body {
+    display: grid;
+    grid-template-areas: 
+    ".. title title2"
+    "info .. image"
+    ".. .. stats";
+    grid-template-columns: 250px 200px 200px;
+    grid-template-rows: auto 300px auto;
+}
+
+#info {
+    grid-area: info;
+}
+
+#stats {
+    grid-area: stats;
+    list-style: none;
+    padding: 0;
+}
+
+#image {
+    grid-area: image;
+    width: 100%;
+    height: 50%;
+}
+
+#title {
+    grid-area: title;
+    font-size: larger;
+    justify-self: center;
+}
+
+#title2 {
+    grid-area: title2;
+    margin: 4px;
+    align-self: flex-end;
+    justify-self: center;
 }
