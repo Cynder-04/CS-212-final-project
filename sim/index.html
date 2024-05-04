@@ -19,9 +19,9 @@
             <nav>
                <ul>
                 <li><a href="https://cb3474.blob.core.windows.net/$web/cs-212-final-project-testing/CS-212-final-project-main/main-page/index.html"><button class="navbutton">Home</button></a></li>
-              <li><a href="https://cb3474.blob.core.windows.net/$web/cs-212-final-project-testing/CS-212-final-project-main/enemies/nav/index.html"><button class="navbutton">Enemies</button></a></li>
-              <li><a href="https://cb3474.blob.core.windows.net/$web/cs-212-final-project-testing/CS-212-final-project-main/bosses/nav/index.html"><button class="navbutton">Bosses</button></a></li>
-
+                <li><a href="https://cb3474.blob.core.windows.net/$web/cs-212-final-project-testing/CS-212-final-project-main/enemies/nav/index.html"><button class="navbutton">Enemies</button></a></li>
+                <li><a href="https://cb3474.blob.core.windows.net/$web/cs-212-final-project-testing/CS-212-final-project-main/bosses/nav/index.html"><button class="navbutton">Bosses</button></a></li>
+                <li><a href="https://cb3474.blob.core.windows.net/$web/cs-212-final-project-testing/CS-212-final-project-main/sim/index.html"><button class="navbutton">Sim</button></a></li>
                  <hr>
                  <li><input type="text" placeholder="Search.."></li>
                </ul>  
@@ -34,44 +34,58 @@
             <a href="https://cb3474.blob.core.windows.net/$web/cs-212-final-project-testing/CS-212-final-project-main/main-page/index.html">Home</a>
             <a href="https://cb3474.blob.core.windows.net/$web/cs-212-final-project-testing/CS-212-final-project-main/enemies/nav/index.html">Enemies</a>
             <a href="https://cb3474.blob.core.windows.net/$web/cs-212-final-project-testing/CS-212-final-project-main/bosses/nav/index.html">Bosses</a>
+            <a href="https://cb3474.blob.core.windows.net/$web/cs-212-final-project-testing/CS-212-final-project-main/sim/index.html">Sim</a>
         </nav>
     </div>
 
-    <div class="body">
+<div class="body">
       <body>
         <div class="dropdowns">
-        <label for="helmet">Choose helmet:</label>
 
+        <div class="dropdown">
+        <label for="helmet">Choose helmet:</label>
         <select name="helmet" id="helmet">
           <option value="wood">Wood</option>
           <option value="cactus">Cactus</option>
           <option value="iron">Iron</option>
         </select> 
+        </div>
 
+        <div class="dropdown">
         <label for="chestplate">Choose breastplate:</label>
-
         <select name="chestplate" id="chestplate">
           <option value="wood">Wood</option>
           <option value="cactus">Cactus</option>
           <option value="iron">Iron</option>
         </select> 
+        </div>
 
+        <div class="dropdown">
         <label for="greaves">Choose greaves:</label>
-
         <select name="greaves" id="greaves">
           <option value="wood">Wood</option>
           <option value="cactus">Cactus</option>
           <option value="iron">Iron</option>
         </select> 
-         </div>
+        </div>
+
+        </div>
 
          <div class="stats">
+            <div class="stat">
             <p id="helmetStats">Defense: </p>
+            </div>
+
+            <div class="stat">
             <p id="chestplateStats">Defense: </p>
+            </div>
+
+            <div class="stat">
             <p id="greavesStats">Defense: </p>
+            </div>
          </div>
 
-         <p id="setBonus"> </p>
+         <p id="setBonus">Set Bonus: 0</p>
              
 
          <script type="module" src="script.js"></script>
