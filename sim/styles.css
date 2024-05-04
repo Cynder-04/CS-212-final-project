@@ -141,9 +141,9 @@ select {
     grid-template-columns: 200px auto;
     grid-template-columns: 200px 200px;
     grid-template-areas: 
-    "dropdowns stats image"
-    "dropdowns stats image"
-    "dropdowns stats image";
+    "dropdowns stats"
+    "dropdowns stats"
+    "dropdowns stats";
 }
 
 .stats{
